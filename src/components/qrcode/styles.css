@@ -20,7 +20,7 @@
 
 @media only screen and (max-width: 767px) {
   .qrcode-item-container {
-    margin-top: 2rem;
+    margin-top: 1.75vw;
   }
 
   .qr-code-item-legend {
