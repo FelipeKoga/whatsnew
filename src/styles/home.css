@@ -1,53 +1,124 @@
-:root {
-  --font-mono: Consolas, 'Andale Mono WT', 'Andale Mono', 'Lucida Console', 'Lucida Sans Typewriter', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Liberation Mono',
-    'Nimbus Mono L', Monaco, 'Courier New', Courier, monospace;
-  --color-light: #f3f4f6;
+.content {
+  display: flex;
+  justify-content: center;
+  height: 100vh; 
+  padding: 2vw; 
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --color-light: #1f2937;
+.header {
+  width: 80%; 
+  height: 100%; 
+  display: flex; 
+  flex-direction: column;
+  font-size: 4vw;
+  font-weight: 700;
+  font-family: 'Play', serif;
+}
+
+.main-content-item-legend {
+  color: black; 
+  font-weight: 700;
+  font-family: 'Arimo', serif;
+  font-size: 2.5vw;
+  margin-top: 2vw;
+}
+
+.main-content {
+  display: flex; 
+  height: 100%;
+  justify-content: space-evenly; 
+  margin-top: 1vw;
+  align-items: center; 
+  width: 100%;
+}
+
+.main-content-item {
+  display: flex; 
+  height: 100%;
+  flex-direction: column; 
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.qr-code-legend {
+  width: 18vw;
+}
+
+.qr-code {
+  margin-top: -1vw; 
+  z-index: 1;
+  height: auto;
+  width: 16vw;
+}
+
+.logo {
+  width: 100%;
+  margin-left: -1vw; 
+  z-index: 1;
+}
+
+.logo-small {
+  width: 0;
+}
+
+.side-nav {
+  width: 20%; 
+  display: flex; 
+  flex-direction: column;
+}
+
+@media only screen and (max-width: 767px) {
+  .header {
+    text-align: center; 
+    width: 100%;
+    font-size: 2em;
+  }
+
+  .side-nav {
+    width: 0;
+  }
+
+  .main-content {
+    flex-direction: column;
+    margin-top: 12vmin;
+  }
+
+  .main-content-item {
+    margin-top: 2vw;
+  }
+
+  .qr-code-legend {
+    width: 320px;
+  }
+
+  .qr-code {
+    margin-top: -12px;
+    width: 264px;
+  }
+
+  .logo-small {
+    width: 164px;
+    align-self: center;
+    margin-bottom: 1vw;
   }
 }
 
-a {
-  color: inherit;
+body {
+	background: linear-gradient(90deg, #f6a520, #fa902e, #e9bc09);
+	background-size: 400% 400%;
+	animation: gradient 10s ease infinite;
+	height: 100vh;
 }
 
-header > div {
-  font-size: clamp(2rem, -0.4742rem + 6.1856vw, 2.75rem);
-}
-
-header > div {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-header h1 {
-  font-size: 1em;
-  font-weight: 500;
-}
-header img {
-  width: 2em;
-  height: 2.667em;
-}
-
-h2 {
-  font-weight: 500;
-  font-size: clamp(1.5rem, 1rem + 1.25vw, 2rem);
-}
-
-.counter {
-  display: grid;
-  grid-auto-flow: column;
-  gap: 1em;
-  font-size: 2rem;
-  justify-content: center;
-  padding: 2rem 1rem;
-}
-
-.counter > pre {
-  text-align: center;
-  min-width: 3ch;
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }
