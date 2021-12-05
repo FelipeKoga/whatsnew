@@ -1,0 +1,23 @@
+#sidenav {
+  width: 25%;
+  margin-left: -1vw;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+#logo {
+  z-index: 1;
+  width: 100%;
+}
+
+#coins {
+  margin-top: -3vw;
+  width: 60%;
+}
+
+@media only screen and (max-width: 767px) {
+  #sidenav {
+    width: 0;
+  }
+}

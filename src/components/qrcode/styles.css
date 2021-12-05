@@ -1,0 +1,34 @@
+.qrcode-item-container {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.qr-code-item-legend {
+  width: 24vw;
+}
+
+.qr-code-item-image {
+  margin-top: -1vw;
+  z-index: 1;
+  height: auto;
+  width: 22vw;
+}
+
+@media only screen and (max-width: 767px) {
+  .qrcode-item-container {
+    margin-top: 2rem;
+  }
+
+  .qr-code-item-legend {
+    width: 242px;
+  }
+
+  .qr-code-item-image {
+    width: 184px;
+    margin-top: -0.78rem;
+  }
+}

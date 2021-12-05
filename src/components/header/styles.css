@@ -1,0 +1,50 @@
+.divider {
+  background-color: #7533a8;
+  height: 0.78rem;
+  border-radius: 12px;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+#header {
+  margin-top: 1vw;
+  display: flex;
+  flex-direction: column;
+}
+
+#header img {
+  width: 0;
+}
+
+#header h1 {
+  font-size: 4rem;
+  font-weight: 700;
+  font-family: "Play", serif;
+  color: white;
+}
+
+#header h3 {
+  color: black;
+  font-weight: 700;
+  font-family: "Arimo", serif;
+  font-size: 3rem;
+}
+
+@media only screen and (max-width: 767px) {
+  #header h1,
+  h3 {
+    text-align: center;
+    width: 100%;
+    font-size: 2rem;
+  }
+
+  #header h3 {
+    font-size: 1.75rem;
+  }
+
+  #header img {
+    width: 164px;
+    align-self: center;
+    margin-bottom: 5vw;
+  }
+}

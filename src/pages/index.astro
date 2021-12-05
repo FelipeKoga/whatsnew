@@ -1,5 +1,7 @@
 ---
-import QRCode from '../components/QRCode'
+import QRCode from '../components/qrcode'
+import Header from '../components/header'
+import Sidenav from '../components/sidenav'
 ---
 
 <html lang="en">
@@ -11,32 +13,39 @@ import QRCode from '../components/QRCode'
     <link rel="stylesheet" href={Astro.resolve('../styles/global.css')}>
     <link rel="stylesheet" href={Astro.resolve('../styles/home.css')}>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Play|Arimo|">
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-Z98R9QQKKH"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
 
+        gtag('config', 'G-Z98R9QQKKH');
+        </script>
 </head>
 <body>
 
-    <div class="content">
-        <div class="header">
-            <img src="/assets/logo.png" class="logo-small" />
-  
-            <div style="font-weight: bold; color: white;  border-bottom: 1vmin solid #7533a8; padding-bottom: 2vw; ">
-                Quer as melhores novidades de Palmeira ou divulgar sua marca?
-            </div>
-            
-            <div class="main-content-item-legend">
-                Clique ou aponte sua câmera para uma das opções!
-            </div>
+    <main>
+        <div id="content">
+            <Header />
 
-            <div class="main-content">
-                <QRCode client:visible imagePath="/assets/news-qrcode.png" imageLegendUrl="/assets/news.png" url="www.google.com"></QRCode>
-                <QRCode client:visible imagePath="/assets/announce-qrcode.png" imageLegendUrl="/assets/announce.png" url="www.google.com"></QRCode>
-            </div>  
+            <div id="qrcode-container">
+                <QRCode 
+                    client:visible 
+                    imagePath="/assets/news-qrcode.png" 
+                    imageLegendUrl="/assets/news.png" 
+                    url="www.google.com"
+                />
+                <QRCode 
+                    client:visible 
+                    imagePath="/assets/announce-qrcode.png" 
+                    imageLegendUrl="/assets/announce.png" 
+                    url="https://qrfacil.me/QEbYpjMs"
+                />
+            </div>
         </div>
 
-        <div class="side-nav">
-            <img src="/assets/logo.png" class="logo" />
-        </div>
+        <Sidenav />
 
-    </div>
+    </main>
 </body>
 </html>

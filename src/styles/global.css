@@ -5,14 +5,19 @@
 
 body {
   width: 100%;
-  min-height: 100vh;
-  color: #111827;
-  /* background: linear-gradient(180deg, rgba(245,163,33,1) 0%, rgba(252,195,5,1) 35%, rgba(255,234,33,1) 100%); */
+  background: linear-gradient(45deg, #fbbe09, #fa902e, #f49c28);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+}
 
-  background-color: #111827;
-  background-image: url('/assets/background.jpg');
-  background-attachment: fixed;
-  background-size: cover;
-  background-position-y: bottom;
-  background-repeat: no-repeat;
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
