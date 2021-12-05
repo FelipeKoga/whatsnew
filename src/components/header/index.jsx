@@ -6,7 +6,7 @@ const Header = () => {
       <img src="/assets/logo.png" />
 
       <h1>
-        Quer saber as melhores novidades de Palmeira <br /> ou divulgar sua
+        Quer saber as melhores novidades de Palmeira ou divulgar sua
         marca?
       </h1>
 
