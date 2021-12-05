@@ -5,8 +5,9 @@
 
 body {
   width: 100%;
-  background: linear-gradient(90deg, #fa902e, #fabb00, #f49c28);
-  background-size: 400% 400%;
+
+  background: linear-gradient(#fdd32c, #f7b440, #fca14c, #974ccf, #7533a8);
+  background-size: 1% 300%;
   animation: gradient 5s ease infinite;
 }
 
