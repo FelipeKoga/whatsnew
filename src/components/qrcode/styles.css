@@ -8,14 +8,14 @@
 }
 
 .qr-code-item-legend {
-  width: 24vw;
+  width: 22rem;
 }
 
 .qr-code-item-image {
   margin-top: -1vw;
   z-index: 1;
   height: auto;
-  width: 22vw;
+  width: 18rem;
 }
 
 @media only screen and (max-width: 767px) {

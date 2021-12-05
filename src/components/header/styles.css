@@ -17,7 +17,7 @@
 }
 
 #header h1 {
-  font-size: 4rem;
+  font-size: 3rem;
   font-weight: 700;
   font-family: "Play", serif;
   color: white;
@@ -27,19 +27,17 @@
   color: black;
   font-weight: 700;
   font-family: "Arimo", serif;
-  font-size: 3rem;
+  font-size: 2rem;
 }
 
 @media only screen and (max-width: 767px) {
-  #header h1,
-  h3 {
-    text-align: center;
-    width: 100%;
+
+  #header h1 {
     font-size: 2rem;
   }
 
   #header h3 {
-    font-size: 1.75rem;
+    font-size: 1.5rem;
   }
 
   #header img {
