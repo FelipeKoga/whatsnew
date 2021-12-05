@@ -5,7 +5,7 @@ const QRCode = ({ imagePath, imageLegendUrl, url }) => {
     <div
       className="qrcode-item-container"
       onClick={() => {
-        window.open("http://www.google.com");
+        window.open(url);
       }}
     >
       <img src={imageLegendUrl} className="qr-code-item-legend" />
