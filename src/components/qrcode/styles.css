@@ -18,17 +18,17 @@
   width: 20vw;
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 780px) {
   .qrcode-item-container {
     margin-top: 1.75vw;
   }
 
   .qr-code-item-legend {
-    width: 242px;
+    width: 320px;
   }
 
   .qr-code-item-image {
-    width: 184px;
+    width: 264px;
     margin-top: -0.78rem;
   }
 }

@@ -20,10 +20,9 @@ main {
   align-items: center;
   width: 100%;
   margin-top: 2vw;
-  padding-bottom: 8px;
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 780px) {
   main {
     padding: 0px;
   }
